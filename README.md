@@ -1,7 +1,6 @@
-[README.md](https://github.com/user-attachments/files/29279252/README.md)
 # Kazooie | Animatronic Cartoon Bird
 
-A self-contained, battery-powered animatronic figure of Kazooie from *Banjo-Kazooie*, designed and built to a theme-park figure aesthetic. Seven servos drive full-axis head articulation, a blinking eyelid, an opening jaw, and expanding wings. The figure is puppeteered live and runs preprogrammed animations through Bottango, with an Arduino managing motion over I2C.
+A self-contained, battery-powered animatronic figure of Kazooie from *Banjo-Kazooie*. Seven servos drive full-axis head articulation, a blinking eyelid, an opening jaw, and expanding wings. The figure is puppeteered live and runs preprogrammed animations through Bottango, with an Arduino managing motion over I2C.
 
 ![Finished Kazooie animatronic](media/hero-finished-front.jpg)
 
