@@ -2,7 +2,7 @@
 
 A self-contained, battery-powered animatronic figure of Kazooie from *Banjo-Kazooie*. Seven servos drive full-axis head articulation, a blinking eyelid, an opening jaw, and expanding wings. The figure is puppeteered live and runs preprogrammed animations through Bottango, with an Arduino managing motion over I2C.
 
-![Finished Kazooie animatronic](media/hero-finished-front.jpg)
+<img width="8160" height="6144" alt="PXL_20251209_093654632 RAW-01" src="https://github.com/user-attachments/assets/a224e63a-33b3-486f-b893-092b091ffe02" />
 
 ---
 
@@ -12,7 +12,7 @@ A self-contained, battery-powered animatronic figure of Kazooie from *Banjo-Kazo
 |--------|-----------|-------|
 | Head pitch, yaw, and tilt | 3x MG996R | Full three-axis head movement |
 | Jaw open and close | 1x MG996R | Synced to performance |
-| Eyelid blink | 1x MG90S | Top-lid-only motion for a cartoon blink |
+| Eyelid blink | 1x MG90S | Top-lid-only motion for blink |
 | Wings expand and retract | 2x 20kg servos | Lever-arm mechanism, highest torque demand |
 | Live control + canned animation | Bottango over USB serial | Manual puppeteering plus preprogrammed playback |
 
@@ -22,9 +22,7 @@ The build was scoped as a foundational motion platform. The mechanical and elect
 
 ## Skills demonstrated
 
-This project covers a full figure pipeline end to end, the same span of work a show or figure technician handles on a real attraction.
-
-- **Mechanical design and CAD.** Head, jaw, eyelid, and wing mechanisms modeled in Fusion 360 and printed to fit.
+- **Mechanical design and CAD.** Head, neck, jaw, eyelid, and wing mechanisms modeled in Fusion 360 and printed to fit.
 - **Motion and controls.** Seven-channel servo motion coordinated through a single PWM driver on the I2C bus.
 - **Power system design.** A regulated power chain sized so every servo holds a stable 6V under simultaneous load.
 - **Embedded programming.** Arduino C++ handling I2C communication and PWM angle commands.
@@ -74,33 +72,37 @@ Two separate paths keep the logic clean and the motion stable. Commands travel f
 
 **Concept and schematic.** Motion goals and the full wiring layout were planned before any cutting or printing.
 
-![Wiring schematic](media/01-schematic.jpg)
+<img width="5331" height="6947" alt="PXL_20251209_095350764 RAW-01" src="https://github.com/user-attachments/assets/d2a5558f-0fe4-4a6c-8c4c-c1593df31350" />
+<img width="1844" height="4000" alt="20250811_032910" src="https://github.com/user-attachments/assets/65300582-d53d-48a9-b5a3-aa17f2cabf70" />
+
 
 **CAD.** The head, mechanisms, and mounting were modeled in Fusion 360 around the chosen servos.
 
-![CAD head front](media/02-cad-head-front.png)
-![CAD head side](media/03-cad-head-side.png)
+<img width="551" height="689" alt="Kazooie CAD Side" src="https://github.com/user-attachments/assets/2521ce63-3920-47a0-9096-d625b2cee92b" />
+<img width="1234" height="694" alt="Kazooie CAD Rear" src="https://github.com/user-attachments/assets/00553e58-7025-4abf-864d-652eb28ec708" />
+<img width="1234" height="694" alt="Kazooie CAD Front" src="https://github.com/user-attachments/assets/359194c3-615f-4ea0-80e3-bedfbab8321e" />
 
 **Printing and assembly.** Printed parts were assembled into the head and wing frames, then wired into the controller and power system.
 
-![Printed frame](media/04-printed-frame.jpg)
-![Wiring and assembly](media/05-wiring-assembly.jpg)
-![Arduino and driver wiring](media/06-arduino-wiring.jpg)
+<img width="4000" height="1844" alt="20250824_185037" src="https://github.com/user-attachments/assets/cf0216c8-0d32-4360-82a3-c8de3b026faf" />
+<img width="1844" height="4000" alt="20251022_154354" src="https://github.com/user-attachments/assets/808e47b8-2d50-48c4-99eb-bced552c5e27" />
 
 **Mechanism and skin.** The articulated head was skinned and the moving structure verified under the cover.
 
-![Skin buildup](media/07-skin-buildup.jpg)
-![Head mechanism](media/08-head-mechanism.jpg)
+<img width="6144" height="8160" alt="PXL_20251124_093219824 RAW-01" src="https://github.com/user-attachments/assets/2e505678-5a5f-4755-8821-69e547705464" />
+<img width="7994" height="6019" alt="PXL_20251201_011435102 RAW-01~3" src="https://github.com/user-attachments/assets/329bfaef-43bd-45f6-9b49-995a58798428" />
 
 **Aesthetics.** Paint and feathering brought the figure up to its finished character look.
 
-![Paint stage](media/09-paint-stage.jpg)
-![Head finished](media/10-head-finished.jpg)
+<img width="6144" height="8160" alt="PXL_20251129_230924693 RAW-01" src="https://github.com/user-attachments/assets/46ed3919-d754-423b-a65b-04f0f338d750" />
+<img width="6144" height="8160" alt="PXL_20251129_091742788 RAW-01" src="https://github.com/user-attachments/assets/7ff69a24-9a37-4873-a319-28d1c5ffafcf" />
+<img width="6144" height="8160" alt="PXL_20251205_205023124 RAW-01" src="https://github.com/user-attachments/assets/fb4d006f-1797-4aa4-8a14-63c07bcde5f9" />
+
 
 **Finished figure.**
 
-![Finished full figure](media/11-finished-full.jpg)
-![Finished head](media/12-finished-head.jpg)
+<img width="6144" height="8160" alt="PXL_20251209_093702068 RAW-01" src="https://github.com/user-attachments/assets/6ff1483b-21a1-45e7-915a-7d7fed50e127" />
+
 
 ---
 
@@ -111,8 +113,6 @@ Four motion demos exist for this build. Video files are large, so the recommende
 - Head and jaw motion: `add link`
 - Wing expand and retract: `add link`
 - Blink and full performance: `add link`
-
-> Tip: an application reviewer is far more likely to click a 30-second hosted clip than download a raw file, so a short, well-lit clip of coordinated motion is worth more than several long ones.
 
 ---
 
@@ -127,9 +127,6 @@ kazooie-animatronic/
 └── media/
     └── build and finished photos
 ```
-
-The original slide deck contains the demo videos and is too large to keep in the repository directly. Host it (and the videos) externally and link it in the Demo section above.
-
 ---
 
 ## About
