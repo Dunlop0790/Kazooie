@@ -108,8 +108,6 @@ Two separate paths keep the logic clean and the motion stable. Commands travel f
 
 ## Demo videos
 
-Four motion demos exist for this build. Video files are large, so the recommended path is to upload them to YouTube (unlisted is fine for an application) and link them here:
-
 - Head and jaw motion: `add link`
 - Wing expand and retract: `add link`
 - Blink and full performance: `add link`
